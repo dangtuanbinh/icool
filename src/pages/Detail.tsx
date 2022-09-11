@@ -1,9 +1,11 @@
-import DetailContainer from '../components/containers/DetailContainer'
+import DetailContainer from "../components/containers/DetailContainer";
 
 const Detail = () => {
   return (
-    <div><DetailContainer /></div>
-  )
-}
+    <div>
+      <DetailContainer />
+    </div>
+  );
+};
 
-export default Detail
+export default Detail;

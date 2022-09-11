@@ -1,0 +1,38 @@
+.bottomBar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
+  background-color: white;
+  &__left {
+    width: 577px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 120px;
+  }
+  &__logo {
+    height: 100%;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__image {
+      width:120px;
+      height: 80px;
+    }
+  }
+  &__text {
+    width: 272px;
+    height: 100%;
+  }
+  &__right{
+    margin-right: 120px;
+  }
+}
