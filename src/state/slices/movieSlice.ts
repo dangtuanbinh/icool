@@ -29,8 +29,9 @@ const movie = createSlice({
           state.data = action.payload;
         }
       )
-      .addCase(fetchMovielist.rejected, (state: Movie) => {
+      .addCase(fetchMovielist.rejected, (state: Movie, action: PayloadAction<any>) => {
         state.isLoading = "fail";
+        state.errorMsg = action.payload
       });
   },
 });
