@@ -12,21 +12,21 @@ const IconGroup = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <FaFacebook />
+        <FaFacebook size={20} color="#F96D06" />
       </a>
       <a
         href="https://opensea.io/collection/suhosin-official"
         target="_blank"
         rel="noreferrer"
       >
-        <RiInstagramFill />
+        <RiInstagramFill size={20} color="#F96D06" />
       </a>
       <a
         href="https://twitter.com/SuhosinWorld"
         target="_blank"
         rel="noreferrer"
       >
-        <FaTwitterSquare />
+        <FaTwitterSquare size={20} color="#F96D06" />
       </a>
     </div>
   );

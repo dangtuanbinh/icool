@@ -7,7 +7,7 @@
     align-items: center;
     &__label{
         height: 100%;
-        width: 200px;
+        width: 300px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -15,5 +15,12 @@
     }
     &__item{
         cursor: pointer;
+        & p{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        &:hover p{
+            color: #f96d10;
+        }
     }
 }
