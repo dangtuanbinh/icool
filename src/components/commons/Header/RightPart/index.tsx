@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "./styles.scss";
 import CustomDropdown from "../../CustomDropdown";
 import useComponentVisible from "../../../../utils/windowClick";
+import SearchBar from "../SearchBar";
 
 interface NavigateOptions {
   label: string;
@@ -26,17 +27,16 @@ const RightPart = ({ handleLogin, navigateOptions, data }: Props) => {
 
   const showDropdown = () => setIsComponentVisible(!isComponentVisible);
 
-  const showLogoutDropdown = (e: any) => {
-    e.preventDefault();
-  };
-
   return (
     <div className="rightPart" ref={ref}>
       <div className="rightPart__holder" onClick={showDropdown}>
         <Typography className="rightPart__text" style={{ cursor: "pointer" }}>
-         Menu
+          Menu
         </Typography>
         <CustomDropdown items={navigateOptions} collapse={isComponentVisible} />
+      </div>
+      <div className="rightPart__searchBar">
+        <SearchBar />
       </div>
     </div>
   );

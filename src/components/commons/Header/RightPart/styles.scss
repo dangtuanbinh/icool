@@ -1,5 +1,5 @@
 .rightPart {
-  width: 513px;
+  width: 700px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -15,19 +15,8 @@
   &__holder {
     position: relative;
   }
-  &__user {
-    width: 170px;
-    height: 36px;
-    background: #d7fdb3;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    &__image {
-      width: 24px;
-      height: 24px;
-    }
+  &__searchBar{
+    width: 300px;
+    margin-left: 20px;
   }
 }
