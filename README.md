@@ -35,6 +35,7 @@ The following **additional** features are implemented:
 [ ] Carousel for HomePage
 [ ] Online Payment
 [ ] Page Changing Animation
+[ ] Catching Movie poster images
 
 ## License
 
