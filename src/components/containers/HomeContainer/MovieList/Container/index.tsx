@@ -40,7 +40,17 @@ const Container = () => {
         </Space>
       ) : (
         <div className="pullContainer">
-          <PullToRefresh onRefresh={handleRefresh} isPullable>
+          <PullToRefresh
+            onRefresh={handleRefresh}
+            isPullable
+            onFetchMore={() => dispatch(
+              fetchMovielist({
+                api_key: apiKey,
+                language: "en-US",
+                page: 1,
+              })
+            )}
+          >
             <div className="movieContainer__list">
               {movieList.map((item: any, index: any) => (
                 <Item key={index} data={item} />
