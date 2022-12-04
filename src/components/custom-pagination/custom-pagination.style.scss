@@ -1,0 +1,25 @@
+.toto-wui-single-site-zapper-custom-pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 152.39px;
+    height: 42px;
+
+    padding: 0 10px;
+
+    border: 1.5px solid #2c3a43;
+    border-radius: 18px;
+
+    i{
+        cursor: pointer;
+        
+        color: #ffffff;
+    }
+
+    &__text{
+        color: #ffffff;
+        font-weight: bold;
+    }
+}

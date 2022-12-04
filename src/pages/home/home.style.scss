@@ -1,0 +1,327 @@
+.toto-wui-single-site-zapper-home-page {
+  width: 100%;
+
+  &__carousel {
+    position: relative;
+
+    width: 100%;
+    height: 500px;
+  }
+
+  &__carousel-item {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__carousel-image {
+    width: 100%;
+    height: 500px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__carousel-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(
+      ellipse at 50% 50%,
+      rgba(20, 26, 30, 0.95) 100%,
+      rgba(20, 26, 30, 0.95) 100%
+    );
+    z-index: 100;
+  }
+
+  &__carousel-layer-inner {
+    width: 100%;
+
+    padding-left: 10px;
+    padding-right: 150px;
+  }
+
+  &__carousel-layer-item {
+    width: 100%;
+  }
+
+  &__carousel-layer-item-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &__carousel-layer-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+  }
+
+  &__carousel-layer-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 20px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__carousel-layer-text {
+    width: 55%;
+  }
+
+  &__carousel-layer-title {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  &__carousel-layer-desc {
+    color: #ffffff;
+    font-weight: 40px;
+  }
+
+  &__carousel-layer-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 182.22px;
+    height: 46px;
+
+    margin-top: 20px;
+
+    border-radius: 15px;
+
+    background: #784ffe;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      border: 3px solid rgba(150, 123, 239, 0.75);
+    }
+  }
+
+  &__carousel-layer-info-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  &__carousel-layer-image-info {
+    margin-top: 10px;
+  }
+
+  &__carousel-layer-info-title {
+    color: #818181;
+  }
+
+  &__carousel-layer-info-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__carousel-layer-info-name {
+    width: 180px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__trending-nft{
+    padding: 0 10px;
+    margin-top: 60px;
+  }
+
+  &__trending-nft-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid #2b3740;
+  }
+
+  &__trending-nft-title-left{
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  &__trending-nft-title-right{
+    border: 1px solid #2b3740;
+    border-radius: 13px;
+
+    padding: 12px 25px;
+
+    cursor: pointer;
+
+    color: #c7d2da;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover{
+      background: #2b3740;
+    }
+  }
+  &__trending-nft-list-header-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+    padding-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__trending-nft-list-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    span{
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+
+  &__trending-nft-list-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  &__list-item{
+    height: 84px;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .toto-wui-single-site-zapper-home-page {
+    &__carousel-layer-image {
+      width: 192px;
+      height: 192px;
+    }
+
+    &__carousel-layer-title{
+      font-size: 30px;
+    }
+
+    &__carousel-layer-inner {
+      padding-left: 0;
+      padding-right: 70px;
+    }
+
+    .floor-price-text{
+      display: none;
+    }
+
+    .second-header{
+      display: none;
+    }
+
+    &__trending-nft-list-header-wrapper{
+      grid-template-columns: 1fr;
+    }
+
+    &__trending-nft-list-wrapper{
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .toto-wui-single-site-zapper-home-page {
+    &__carousel-layer-item-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+    }
+
+    &__carousel-layer-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__carousel-layer-image-info {
+      display: none;
+    }
+
+    &__carousel-layer-title {
+      width: 250px;
+
+      overflow: hidden;
+
+      margin: 20px 0;
+
+      text-align: center;
+      font-size: 30px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &__carousel-layer-desc {
+      width: 100vw;
+
+      text-align: center;
+      font-size: 22px;
+    }
+
+    &__carousel-layer-inner {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__carousel-layer-image {
+      width: 192px;
+      height: 192px;
+    }
+  }
+}

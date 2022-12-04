@@ -1,0 +1,56 @@
+.app {
+  background: #141a1e;
+}
+
+.app-body-container {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 70px;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 1000;
+}
+
+.app-sidebar {
+  position: fixed;
+  top: 70px;
+  left: 0;
+
+  height: 100vh;
+}
+
+.app-body {
+  width: 100vw;
+
+  padding-left: 250px ;
+
+  background: #141a1e;
+}
+
+@media screen and (max-width: 976px) {
+  .app-body{
+    
+    padding-left: 80px;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .app-sidebar{
+    display: none;
+  }
+
+  .app-body{
+    padding-left: 0;
+  }
+}

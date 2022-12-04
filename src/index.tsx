@@ -5,16 +5,16 @@ import 'antd/dist/antd.css'
 
 import "./index.css";
 import App from "./App";
-import store from "./state/store";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <Router>
-    <Provider store={store}>
       <App />
-    </Provider>
   </Router>
 );
 

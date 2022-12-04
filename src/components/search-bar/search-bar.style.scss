@@ -1,0 +1,65 @@
+.toto-wui-single-site-zapper-search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 42px;
+
+  &__search-group {
+    width: 100%;
+  }
+
+  &__search-input-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    max-width: 100%;
+  }
+
+  &__search-input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 40px;
+
+    border-radius: 18px;
+    border: 1px solid #2c3a43;
+
+    background: #202a2f;
+    color: #ffffff;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__search-icon {
+    position: absolute;
+    left: 15px;
+
+    color: #ffffff;
+  }
+
+  
+
+  &__pagination {
+    min-width: 152.39px;
+    height: 42px;
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .toto-wui-single-site-zapper-search-bar {
+   
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .toto-wui-single-site-zapper-search-bar {
+
+  }
+}

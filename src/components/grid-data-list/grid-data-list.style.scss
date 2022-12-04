@@ -1,0 +1,117 @@
+.toto-wui-single-site-zapper-grid-data-list {
+  margin-bottom: 40px;
+  &__title {
+    padding: 0 0 15px 10px;
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #2c3a43;
+
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__list-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 100%;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 63.13px;
+
+    padding-left: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 15px;
+
+      background: #202a2f;
+    }
+  }
+
+  &__list-logo {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 15px;
+
+    border-radius: 360px;
+  }
+
+  &__list-item-title {
+    color: #ffffff;
+    font-size: 16px;
+  }
+
+  &__list-item-categories {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-item-categories-item {
+    padding: 2px 7px;
+    margin-right: 5px;
+
+    border-radius: 15px;
+
+    background: #202a2f;
+
+    color: #c7d2da;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &__view-more {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 35.56px;
+
+    margin: 20px 0;
+  }
+
+  &__view-more-button {
+    padding: 7px 10px;
+
+    cursor: pointer;
+
+    border-radius: 20px;
+
+    background: #202a2f;
+
+    color: #c7d2da;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+    &:hover{
+        background: #2c3940;
+    }
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .toto-wui-single-site-zapper-grid-data-list{ 
+    &__list-container {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .toto-wui-single-site-zapper-grid-data-list{ 
+    &__list-container {
+      display: block;
+    }
+  }
+}

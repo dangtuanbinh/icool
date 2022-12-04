@@ -1,0 +1,26 @@
+export const NetworkMock = [
+    {
+        id:1,
+        name:'Ethereum',
+        logoUrl:'https://zapper.fi/images/networks/ethereum-icon.png',
+        color:'#607fea',
+    },
+    {
+        id:2,
+        name:'BSC',
+        logoUrl:'https://zapper.fi/images/networks/binance-smart-chain-icon.png',
+        color:'#f3ba2e',
+    },
+    {
+        id:3,
+        name:'Avalanche',
+        logoUrl:'https://zapper.fi/images/networks/avalanche-icon.png',
+        color:'#e84141',
+    },
+    {
+        id:4,
+        name:'Arbitrum',
+        logoUrl:'https://zapper.fi/images/networks/arbitrum-icon.png',
+        color:'#28a1f0',
+    },
+]

@@ -1,0 +1,21 @@
+.toto-wui-single-site-nft-all {
+  width: 100%;
+  height: 100%;
+
+  &__pagination-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 45px;
+
+    margin: 20px 0;
+  }
+
+  &__pagination {
+    width: 152.39px;
+    height: 42px;
+  }
+}

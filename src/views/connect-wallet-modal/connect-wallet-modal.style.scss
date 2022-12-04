@@ -1,0 +1,43 @@
+.toto-wui-single-site-zapper-connect-wallet-modal {
+  &__modal-header {
+    background: #202a2f;
+  }
+
+  &__modal-header-title {
+    color: #ffffff;
+    font-weight: bold;
+  }
+
+  &__modal-header.modal-header {
+    border-bottom: 1px solid #2c3a43;
+
+    i {
+      color: #ffffff !important;
+      font-size: 30px;
+    }
+  }
+
+  &__modal-body.modal-body {
+    background: #202a2f;
+  }
+
+  &__list-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+  }
+
+  &__list-item {
+    width: 318px;
+    height: 80px;
+
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+
+    background: #141a1e;
+  }
+}

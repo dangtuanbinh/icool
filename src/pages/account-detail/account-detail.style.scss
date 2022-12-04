@@ -1,0 +1,413 @@
+.toto-wui-single-site-account-detail {
+  width: 100%;
+  height: 100%;
+
+  &__header {
+    width: 100%;
+    height: 350px;
+  }
+
+  &__header-top {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 180px;
+
+    padding: 0 15px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__header-top-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+      360deg,
+      rgba(20, 26, 30, 1) 50%,
+      rgba(20, 26, 30, 0.6) 100%
+    );
+  }
+
+  &__header-image-wrapper {
+    z-index: 900;
+
+    overflow: hidden;
+
+    border: 1px solid #000000;
+    border-radius: 360px;
+  }
+
+  &__header-image {
+    width: 114px;
+    height: 114px;
+  }
+
+  &__header-button-group {
+    z-index: 890;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 280px;
+    height: 32.36px;
+
+    z-index: 200;
+  }
+
+  &__header-button {
+    color: #ffffff;
+  }
+
+  &__header-button {
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: #2c3a43;
+    }
+  }
+
+  &__dropdown-toggle-copy.btn {
+    background: none;
+    border: none;
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+
+    &:focus {
+      background: none !important;
+    }
+
+    &:hover {
+      background: none !important;
+    }
+  }
+
+  &__dropdown-toggle-copy.dropdown-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background: #29363d;
+    }
+
+    &:focus {
+      background: none;
+    }
+  }
+
+  &__copy-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 360px;
+
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 360px;
+
+      background: #29363d;
+    }
+
+    i {
+      font-size: 25px;
+      font-weight: 600;
+    }
+  }
+
+  .follow {
+    width: 130px;
+
+    padding: 4px 0;
+
+    cursor: pointer;
+
+    border: 1px solid #2c3a43;
+    border-radius: 20px;
+
+    font-weight: 600;
+
+    i {
+      font-size: 18px;
+      margin-left: 7px;
+      font-weight: 600;
+    }
+  }
+
+  .send {
+    width: 83.71px;
+
+    padding: 4px 0;
+
+    cursor: pointer;
+
+    border-radius: 20px;
+
+    i {
+      font-size: 15px;
+      margin-left: 7px;
+      font-weight: 600;
+    }
+  }
+
+  .copy {
+    width: 32px;
+
+    padding: 4px 0;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+  }
+
+  &__header-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 97.54px;
+
+    padding: 0 15px;
+    margin-top: 15px;
+  }
+
+  &__header-info-name {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  &__header-info-address-wrapper {
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+    span {
+      overflow: hidden;
+
+      width: 120px;
+
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__header-info-address-icon {
+    cursor: pointer;
+
+    i {
+      margin-left: 7px;
+
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  &__dropdown-menu {
+    width: 314px;
+
+    margin-top: 10px;
+    padding: 10px 7px 0 7px;
+
+    border: 1px solid #2c3a43;
+
+    background: #141a1e;
+    box-shadow: 0px 0px 5px 0px rgba(38, 32, 32, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(38, 32, 32, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(38, 32, 32, 0.75);
+  }
+
+  &__header-info-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 250px;
+
+    margin-top: 15px;
+
+    color: #ffffff;
+    font-size: 18px;
+    span {
+      width: 50%;
+    }
+  }
+
+  &__header-net-worth-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: 464px;
+    height: 97px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: #29363d;
+
+    span {
+      color: #ffffff;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+
+  &__header-net-worth-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      color: #c7d2da;
+      font-size: 17px;
+    }
+  }
+
+  &__header-net-worth-refresh {
+    cursor: pointer;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__body {
+    margin-top: 25px;
+
+    width: 100%;
+
+    border-bottom: 1px solid #2c3a43;
+  }
+
+  &__body-nav.nav {
+    height: 45px;
+  }
+
+  &__body-nav-link.nav-link {
+    height: 45px;
+
+    color: #c7d2da;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover {
+      color: #c7d2da;
+    }
+  }
+
+  &__body-nav-link-active.nav-link {
+    height: 45px;
+
+    border-bottom: 1px solid #ffffff;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover {
+      color: #ffffff;
+    }
+
+    &:focus {
+      color: #ffffff;
+    }
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .toto-wui-single-site-account-detail {
+    &__header{
+      height: 400px;
+    }
+
+    &__header-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__header-net-worth-wrapper {
+      width: 100%;
+      height: 100px;
+
+      margin-top: 10px;
+    }
+
+    &__header-net-worth-title{
+      span{
+        font-size: 23px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .toto-wui-single-site-account-detail {
+    &__header{
+      height: 400px;
+    }
+    &__header-top{
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    &__header-info-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center ;
+    }
+
+    &__header-bottom {
+      flex-direction: column;
+    }
+
+    &__header-net-worth-wrapper {
+      width: 100%;
+
+      margin: 20px 0;
+    }
+
+    &__header-info-social{
+      text-align: center;
+    }
+
+    &__header-net-worth-title{
+      span{
+        font-size: 23px;
+      }
+    }
+  }
+}

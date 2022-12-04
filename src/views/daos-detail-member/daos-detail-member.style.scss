@@ -1,0 +1,31 @@
+.toto-wui-single-site-zapper-daos-detail-member {
+  width: 100%;
+  height: 100%;
+
+  &__toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 0 10px;
+    margin: 15px 0;
+  }
+
+  &__tab {
+    padding: 2px 0;
+
+    border: 1px solid #2c3a43;
+    border-radius: 20px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: flex-end;
+
+    padding: 0 10px;
+    margin: 15px 0;
+  }
+}

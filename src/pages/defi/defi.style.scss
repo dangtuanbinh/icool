@@ -1,0 +1,302 @@
+.toto-wui-single-site-defi {
+  max-width: 100%;
+  height: 100%;
+
+  &__header {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    max-width: 100%;
+    height: 110px;
+
+    padding: 10px 10px 0;
+  }
+
+  &__network-toolbar {
+    z-index: 20;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-x: scroll;
+
+    max-width: 120vw;
+    height: 40.36px;
+  }
+
+  &__network-nav.nav {
+    width: 100%;
+  }
+
+  &__network-nav-item.nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 100.03px;
+    min-height: 28px;
+
+    padding: 0 4px;
+  }
+
+  &__network-nav-link.nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100.03px;
+    height: 28px;
+
+    border-radius: 20px;
+
+    background: #253037;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      background: #29363d;
+
+      color: #c7d2da;
+    }
+  }
+
+  &__network-title {
+    z-index: 20;
+
+    width: 100%;
+
+    font-size: 32px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #ffffff;
+  }
+
+  &__header-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgb(10, 10, 10);
+    background: linear-gradient(
+      0deg,
+      rgba(10, 10, 10, 0.8141850490196079) 40%,
+      rgba(240, 242, 245, 0.4584427521008403) 100%
+    );
+  }
+
+  &__slider {
+    margin-top: 20px;
+  }
+
+  &__text-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-left: 10px;
+  }
+
+  &__body-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  &__body-subtitle {
+    margin-top: 3px;
+
+    color: #c7d2da;
+  }
+
+  &__body-subtitle-link {
+    color: #c7d2da;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: underline;
+      color: #c7d2da;
+    }
+  }
+
+  &__toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+
+  &__search-bar {
+    width: 87%;
+
+    margin-right: 10px;
+  }
+
+  &__network-dropdown {
+    display: none;
+  }
+
+  &__list {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__list-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 15px 10px;
+    margin: 10px 0;
+
+    border-bottom: 1px solid #2c3a43;
+  }
+
+  &__rank-title,
+  &__list-app-name,
+  &__list-tiv {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-title {
+    padding: 10px;
+  }
+
+  &__list-app-name {
+    width: 90%;
+
+    cursor: pointer;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__rank-title {
+    width: 5%;
+
+    padding-left: 15px;
+    margin-right: 15px;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__list-tiv {
+    min-width: 5%;
+
+    cursor: pointer;
+
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+
+    i {
+      font-size: 18px;
+    }
+  }
+
+  &__list-container {
+    width: 100%;
+
+    padding-left: 15px;
+  }
+
+  &__list-item {
+    width: 100%;
+    height: 60px;
+
+    padding-right: 10px;
+  }
+
+  &__pagination-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: 45px;
+
+    padding: 0 10px;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .toto-wui-single-site-defi {
+    &__rank-title {
+      min-width: 40px;
+
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .toto-wui-single-site-defi {
+    &__rank-title {
+      min-width: 40px;
+
+      margin-right: 30px;
+    }
+
+    &__toolbar {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: unset;
+    }
+
+    &__search-bar{
+      width: 100%;
+
+      margin-right: 0;
+    }
+
+    &__pagination{
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .toto-wui-single-site-defi {
+    &__rank-title {
+      display: none;
+    }
+
+    &__pagination{
+      display: none;
+    }
+
+    &__network-dropdown{
+      display: block;
+
+      margin-top: 15px;
+    }
+  }
+}

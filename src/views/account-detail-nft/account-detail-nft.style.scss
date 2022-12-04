@@ -1,0 +1,164 @@
+.toto-wui-single-site-zapper-account-detail-nft {
+  width: 100%;
+  height: 100%;
+
+  &__network-toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+    height: 40.36px;
+
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  &__network-nav.nav {
+    width: 100%;
+  }
+
+  &__network-nav-item.nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 130.03px;
+    height: 32px;
+
+    padding: 0 4px;
+  }
+
+  &__network-nav-link.nav-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 130.03px;
+    height: 32px;
+
+    border-radius: 20px;
+    border: 1px solid #2c3a43;
+
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      background: #29363d;
+      color: #c7d2da;
+    }
+  }
+
+  &__network-nav-logo{
+    width: 22px;
+    height: 22px;
+
+    margin-right: 10px;
+  }
+
+  &__toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 0 10px;
+    margin: 15px 0;
+  }
+
+  &__tab {
+    min-width: 204.4px;
+    min-height: 36.36px;
+
+    padding: 2px 0;
+
+    border: 1px solid #2c3a43;
+    border-radius: 20px;
+  }
+
+  &__search-bar{
+    width: 81%;
+
+    margin-left: 10px;
+  }
+
+  &__body{
+    padding: 0 10px;
+    span{
+        color: #ffffff;
+    }
+  }
+
+  &__nft-list{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1556px) {
+  .toto-wui-single-site-zapper-daos-detail-nft{
+    &__nft-list{
+      grid-template-columns: repeat((6,1fr));
+    }
+  }
+}
+
+@media screen and (max-width: 1256px) {
+  .toto-wui-single-site-zapper-daos-detail-nft{
+    &__nft-list{
+      grid-template-columns: repeat((5,1fr));
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .toto-wui-single-site-zapper-daos-detail-nft{
+    &__nft-list{
+      grid-template-columns: repeat((4,1fr));
+    }
+  }
+}
+
+@media screen and (max-width: 976px) {
+  .toto-wui-single-site-zapper-daos-detail-nft{
+    &__toolbar{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__search-bar{
+      width: 100%;
+
+      margin-left: 0;
+      margin-top: 15px;
+    }
+
+    &__nft-list{
+      grid-template-columns: repeat((3,1fr));
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .toto-wui-single-site-zapper-daos-detail-nft{
+    &__nft-list{
+      grid-template-columns: repeat((3,1fr));
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .toto-wui-single-site-zapper-daos-detail-nft{
+    &__nft-list{
+      grid-template-columns: repeat((2,1fr));
+    }
+  }
+}

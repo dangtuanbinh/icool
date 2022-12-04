@@ -1,0 +1,262 @@
+.toto-wui-single-site-zapper-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 250px;
+  height: 100vh;
+
+  padding-bottom: 20px;
+
+  background: #141a1e;
+
+  &__connect-wallet-wrapper {
+    display: none;
+  }
+
+  &__connect-wallet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 37.5px;
+
+    border-radius: 15px;
+
+    background: #784ffe;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      border: 3px solid rgba(150, 123, 239, 0.75);
+    }
+  }
+
+  &__navigation-group {
+    padding-left: 7px;
+    padding-right: 30px;
+  }
+
+  &__navigation-item {
+    margin-bottom: 30px;
+  }
+
+  &__navigation-item-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 6px 0 6px 15px;
+
+    cursor: pointer;
+
+    &:hover {
+      border-radius: 17px;
+
+      background: #202a2e;
+    }
+  }
+
+  &__navigation-item-coming {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 6px 0 6px 15px;
+  }
+
+  &__navigation-item-soon {
+    position: absolute;
+    top: 25%;
+    right: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4px 10px;
+
+    border-radius: 15px;
+
+    background: #202a2e;
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  &__navigation-item-icon {
+    margin-right: 15px;
+
+    color: #ffffff;
+    font-size: 22px;
+  }
+
+  &__navigation-item-title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 7px;
+    padding-right: 30px;
+  }
+
+  &__statistic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-left: 15px;
+  }
+
+  &__link-item {
+    color: #ffffff;
+    font-size: 11px;
+
+    text-decoration: none;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  .statistic {
+    margin-bottom: 10px;
+  }
+
+  &__statistic-icon {
+    margin-right: 5px;
+
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  &__statistic-title {
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  &__link-divider {
+    margin: 0 10px;
+
+    color: #ffffff;
+  }
+
+  &__navigation-responsive{
+    display: none;
+  }
+
+  &__network-logo{
+    width: 30px;
+    height: 30px;
+
+    margin-right: 7px;
+  }
+
+  &__footer-responsive{
+    display: none;
+  }
+
+  &__footer-responsive-left{
+    display: flex;
+    align-items: center;
+
+    width: 44px;
+
+    img{
+      width: 28px;
+      height: 28px;
+
+      margin-right: 10px;
+    }
+
+    span{
+      color: #ffffff;
+    }
+  }
+
+  &__footer-responsive-right{
+    color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 976px) {
+  .toto-wui-single-site-zapper-sidebar {
+    width: 80px;
+
+    &__navigation-item-title {
+      display: none;
+    }
+
+    &__navigation-item-soon {
+      display: none;
+    }
+
+    &__link {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .toto-wui-single-site-zapper-sidebar {
+    width: 250px;
+    height: 100vh;
+
+    &__navigation-item-title {
+      display: block;
+    }
+
+    &__navigation-item-soon {
+      display: block;
+    }
+
+    &__connect-wallet-wrapper {
+      display: block;    
+
+      margin-top: 20px;
+      padding: 0 10px;
+    }
+
+    &__navigation-responsive{
+      display: block;
+    }
+
+    &__footer{
+      display: none;
+    }
+
+    &__footer-responsive{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-top: 20px;
+      padding: 0 10px 0 23px;
+    }
+  }
+}
