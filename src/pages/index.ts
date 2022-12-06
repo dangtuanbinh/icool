@@ -8,3 +8,4 @@ export * from "./bridge";
 export * from "./account-detail";
 export * from "./defi-detail";
 export * from "./daos-detail";
+export * from './nft-detail';

@@ -189,6 +189,8 @@
   }
 
   &__trending-nft-title-right{
+    min-width: 50px;
+
     border: 1px solid #2b3740;
     border-radius: 13px;
 
@@ -322,6 +324,14 @@
     &__carousel-layer-image {
       width: 192px;
       height: 192px;
+    }
+
+    &__trending-nft-title-left{
+      font-size: 23px;
+    }
+
+    &__trending-nft-title-right{
+      font-size: 17px;
     }
   }
 }

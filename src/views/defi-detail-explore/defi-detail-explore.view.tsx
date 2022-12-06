@@ -1,8 +1,6 @@
-import { useNavigate } from "react-router-dom";
 import {
   CustomPagination,
   ListItem,
-  NetworkDropdown,
   SearchBar,
 } from "../../components";
 import "./defi-detail-explore.style.scss";
@@ -12,8 +10,6 @@ const classNamePrefix = "toto-wui-single-site-defi-detail-explore";
 
 export const DefiDetailExplore = (props: IDefiDetailExploreProps) => {
   const { data } = props;
-
-  console.log(data);
 
   return (
     <div className={classNamePrefix}>

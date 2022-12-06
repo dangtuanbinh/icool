@@ -5,6 +5,7 @@ import {
   AccountDetailPage,
   BridgePage,
   DaosDetailPage,
+  NftDetailPage,
   SwapPage,
 } from "./pages";
 import { DaosPage } from "./pages/daos";
@@ -39,6 +40,7 @@ function App() {
             <Route path="/account/:id" element={<AccountDetailPage />} />
             <Route path="/defi/:id" element={<DefiDetailPage />} />
             <Route path="/daos/:id" element={<DaosDetailPage />} />
+            <Route path="/nft/:name" element={<NftDetailPage />} />
           </Routes>
         </div>
       </div>

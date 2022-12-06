@@ -136,7 +136,9 @@ export const HomePage = () => {
             <span>Volume</span>
           </div>
 
-          <div className={`${classNamePrefix}__trending-nft-list-header second-header`}>
+          <div
+            className={`${classNamePrefix}__trending-nft-list-header second-header`}
+          >
             <span>Name</span>
             <span>Volume</span>
           </div>
@@ -144,7 +146,11 @@ export const HomePage = () => {
 
         <div className={`${classNamePrefix}__trending-nft-list-wrapper`}>
           {NftCollectionMock.map((item: NftCollection) => (
-            <div className={`${classNamePrefix}__list-item`}>
+            <div
+              className={`${classNamePrefix}__list-item`}
+              key={item.id}
+              onClick={() => navigate("/nft/" + item.name, { state: item })}
+            >
               <ListItem
                 rank={item.id}
                 logoUrl={item.logoUrl}

@@ -7,3 +7,4 @@ export * from "./network.mock";
 export * from "./language.mock";
 export * from "./wallet.mock";
 export * from "./top-sale-nft.mock";
+export * from './nft-activity-mock';

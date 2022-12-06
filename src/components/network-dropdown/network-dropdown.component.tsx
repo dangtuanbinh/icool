@@ -24,7 +24,7 @@ export const NetworkDropdown: React.FC<INetWorkModalProps> = () => {
           >
             <ListItem leftTitle="All network" icon="bi bi-grid" />
             {NetworkMock.map((item: any) => (
-              <div className={`${classNamePrefix}__list-item`}>
+              <div className={`${classNamePrefix}__list-item`} key={item.id}>
                 <ListItem logoUrl={item.logoUrl} leftTitle={item.name} />
               </div>
             ))}

@@ -13,3 +13,7 @@ export * from "./search-modal";
 export * from "./language-modal";
 export * from "./nft-all";
 export * from "./nft-portfolio";
+export * from "./nft-detail-explore";
+export * from "./nft-detail-activity";
+export * from "./nft-detail-owners";
+export * from "./single-nft-detail";

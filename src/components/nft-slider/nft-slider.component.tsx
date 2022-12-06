@@ -21,7 +21,7 @@ export const NftSlider = (props: INftSliderProps) => {
       <div className={`${classNamePrefix}__container`}>
         <div className={`${classNamePrefix}__item-wrapper`}>
           {data?.map((item) => (
-            <SingleNft data={item} />
+            <SingleNft data={item} key={item.id} />
           ))}
         </div>
       </div>
